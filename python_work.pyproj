@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{cf1d662c-e2cb-47c8-8ec8-a2d3ac3b731d}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>alien.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{e614c764-6d9e-4607-9337-b7073809a0bd};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <InterpreterId />
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <PythonDebugWebServerCommandArguments>--debug $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
+    <PythonWsgiHandler>{StartupModule}.wsgi_app()</PythonWsgiHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="die_visual.svg" />
+    <Content Include="guest_book.txt" />
+    <Content Include="images\ship.bmp" />
+    <Content Include="images\ship1.bmp" />
+    <Content Include="pi_digits.txt" />
+    <Content Include="programming.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alien.py" />
+    <Compile Include="alien_invasion.py" />
+    <Compile Include="amusement_park.py" />
+    <Compile Include="apostrophe.py" />
+    <Compile Include="bicycles.py" />
+    <Compile Include="cars.py" />
+    <Compile Include="cars2.py" />
+    <Compile Include="die.py" />
+    <Compile Include="die_visual.py" />
+    <Compile Include="division.py" />
+    <Compile Include="dog.py" />
+    <Compile Include="favorite_languages.py" />
+    <Compile Include="file_reader.py" />
+    <Compile Include="formatted_name.py" />
+    <Compile Include="greet_user.py" />
+    <Compile Include="hello_world.py" />
+    <Compile Include="magicians.py" />
+    <Compile Include="making_pizzas.py" />
+    <Compile Include="mpl_squares.py" />
+    <Compile Include="name.py" />
+    <Compile Include="name_function.py" />
+    <Compile Include="parrot.py" />
+    <Compile Include="parrot2.py" />
+    <Compile Include="pizza.py" />
+    <Compile Include="printing_models.py" />
+    <Compile Include="random_walk.py" />
+    <Compile Include="remember_me.py" />
+    <Compile Include="rw_visual.py" />
+    <Compile Include="scatter_squares.py" />
+    <Compile Include="settings.py" />
+    <Compile Include="ship.py" />
+    <Compile Include="test_name_ function.py" />
+    <Compile Include="user_profile.py" />
+    <Compile Include="voting.py" />
+    <Compile Include="word_count.py" />
+    <Compile Include="write_message.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+</Project>
